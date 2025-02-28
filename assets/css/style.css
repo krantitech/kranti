@@ -179,13 +179,8 @@ input {
 }
 .header__img{
     display: inline-flex;
-    height: 100px;
+    height: 50px;
 }
-.nav__logo, .header__img{
-    align-items: center;
-    column-gap: .5rem;
-}
-
 .nav__btns {
     display: flex;
     align-items: center;
