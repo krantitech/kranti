@@ -20,34 +20,287 @@
 <body>
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+               <img src="/assets/img/headerpp.png" alt="" class="header__img">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link"> Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Shop</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="cart.html" class="nav__link">Cart</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blogs</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="faq.html" class="nav__link">FaQ'S</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <div class="login__toggle" id="login-button">
+                    <i class="bx bx-user"></i>
+                </div>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+
+                
+            </div>
+
+        </nav>
         
     </header>
 
     <!--=============== CART ===============-->
     <div class="cart" id="cart">
-        
+        <i class="bx bx-x cart__close" id="cart-close"></i>
+
+        <h2 class="cart__title-center">My Cart</h2>
+
+       <div class="cart__container">
+        <article class="cart__card">
+            <div class="cart__box">
+                <img src="assets/img/earbuds.webp" alt="" class="cart__img">
+            </div>
+
+            <div class="cart__details">
+                <h3 class="cart__title">Earbuds</h3>
+                <span class="cart__price">NPR-00.00</span>
+
+                <div class="cart__amount">
+                    <div class="cart__amount-content">
+                        <span class="cart__amount-box">
+                            <i class="bx bx-minus"></i>
+                        </span>
+
+                        <span class="cart__amount-number">0</span>
+
+                        <span class="cart__amount-box">
+                            <i class="bx bx-plus"></i>
+                        </span>
+                    </div>
+                    <i class="bx bx-trash-alt cart__amount-trash"></i>
+                </div>
+            </div>
+        </article>
+
+        <article class="cart__card">
+            <div class="cart__box">
+                <img src="assets/img/cart-2.png" alt="" class="cart__img">
+            </div>
+
+            <div class="cart__details">
+                <h3 class="cart__title">#your Product</h3>
+                <span class="cart__price">NPR-00.00</span>
+
+                <div class="cart__amount">
+                    <div class="cart__amount-content">
+                        <span class="cart__amount-box">
+                            <i class="bx bx-minus"></i>
+                        </span>
+
+                        <span class="cart__amount-number">0</span>
+
+                        <span class="cart__amount-box">
+                            <i class="bx bx-plus"></i>
+                        </span>
+                    </div>
+                    <i class="bx bx-trash-alt cart__amount-trash"></i>
+                </div>
+            </div>
+        </article>
+
+        <article class="cart__card">
+            <div class="cart__box">
+                <img src="assets/img/cart-3.png" alt="" class="cart__img">
+            </div>
+
+            <div class="cart__details">
+                <h3 class="cart__title">#product</h3>
+                <span class="cart__price">NPR-00.00</span>
+
+                <div class="cart__amount">
+                    <div class="cart__amount-content">
+                        <span class="cart__amount-box">
+                            <i class="bx bx-minus"></i>
+                        </span>
+
+                        <span class="cart__amount-number">0</span>
+
+                        <span class="cart__amount-box">
+                            <i class="bx bx-plus"></i>
+                        </span>
+                    </div>
+                    <i class="bx bx-trash-alt cart__amount-trash"></i>
+                </div>
+            </div>
+        </article>
+       </div> 
+
+       <div class="cart__prices">
+        <span class="cart__prices-item">#no.item</span>
+        <span class="cart__prices-total">NPR-00.00</span>
+       </div>
     </div>
 
     <!--=============== LOGIN ===============-->
     <div class="login" id="login">
+        <i class="bx bx-x login__close" id="login-close"></i>
+
+        <h2 class="login__tile-center">Login</h2>
         
+        <form action=""class="login__form grid">
+            <div class="login__content">
+                <label for="" class="login__label">Email</label>
+                <input type="email" class="login__input">
+            </div>
+
+            <div class="login__content">
+                <label for="" class="login__label">Password</label>
+                <input type="password" class="login__input">
+            </div>
+
+            <div>
+                <a href="#" class="button">Sign in</a>
+            </div>
+
+            <div>
+                <p class="signup">Forgot password ? <a href="registration.html">Sign up now</a></p>
+            </div>
+        </form>
     </div>
 
     <!--=============== MAIN ===============-->
     <main class="main">
         <!--=============== REGISTRATION ===============-->
         <section class="registration section container">
-            
+          <div class="order__container">
+            <div class="order__form">Order your product</div>
+               <form action="mailto:techy@krantitech.com">
+                  <div class="user-details">
+                      <div class="input-box">
+                          <span class="details-forms">Full Name*</span>
+                          <input type="text" class="" placeholder="full name" required>
+                       </div>
+
+                        <div class="input-box">
+                          <span class="details-forms">Phone Number*</span>
+                         <input type="number" value="" placeholder="enter your contact" required>
+                        </div>
+
+                       <div class="input-box">
+                          <span class="details-forms">City*</span>
+                          <input type="city" class="" placeholder="city" required>
+                       </div>
+
+                       <div class="input-box">
+                          <span class="details-forms">State/Province*</span>
+                          <input type="state/province" class="" placeholder="state/province" required>
+                       </div>
+
+                       <div class="input-box">
+                        <span class="details-forms">Email</span>
+                        <input type="email" class="" placeholder="Enter your email">
+                       </div>
+                       
+                       <div class="input-box">
+                        <span class="details-forms">Product Name*</span>
+                        <input type="product" class="" placeholder="your product" required>
+                       </div> 
+                </div>
+                <div class="button-submit" >
+                       <input action="mailto:techy@krantitech.com"  type="submit" class="" value="Confirm your order">
+                </div>
+            </form>
+          </div>
         </section>
     </main>
 
     <!--=============== FOOTER ===============-->
     <footer class="footer section">
-        
+        <div class="footer__container container grid">
+            <!----Footer Content 1-------->
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="bx bxs-shopping-bags footer__logo-icon"></i>K-Tech
+                </a>
+
+                <p class="footer__description">Enjoy the biggest sale <br> of your life</p>
+
+                <ul class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-tiktok"></i></a>
+                </ul>
+            </div>
+
+             <!----Footer Content 2-------->
+             <div class="footer__content">
+                <h3 class="footer__title">About</h3>
+
+                <ul class="footer__links">
+                    <li><a href="about.html" class="footer__link">About Us</a></li>
+                    <li><a href="contact.html" class="footer__link">Customer Support</a></li>
+                    <li><a href="faq.html" class="footer__link">Support Center</a></li>
+                </ul>
+            </div>
+
+             <!----Footer Content 3-------->
+             <div class="footer__content">
+                <h3 class="footer__title">Our Services</h3>
+
+                <ul class="footer__links">
+                    <li><a href="shop.html" class="footer__link">Shop</a></li>
+                    <li><a href="internal/discount.html" class="footer__link">Discounts</a></li>
+                    <li><a href="registration.html" class="footer__link">Shipping mode</a></li>
+                </ul>
+            </div>
+
+             <!----Footer Content 4-------->
+             <div class="footer__content">
+                <h3 class="footer__title">Our Company</h3>
+
+                <ul class="footer__links">
+                    <li><a href="registration.html" class="footer__link">Register</a></li>
+                    <li><a href="contact.html" class="footer__link">Contact</a></li>
+                    <li><a href="about.html" class="footer__link">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">Copyright &#169 2025 All Rights Reserved. Developed by: Jiban Budhathoki</span>
     </footer>
 
     <!--=============== SCROLL UP ===============-->
-
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
     <!--=============== STYLE SWITCHER ===============-->
     
     <!--=============== SWIPER JS ===============-->
